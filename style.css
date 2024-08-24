@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+ * {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background: #afd8da;
+  height: 100%;
+  width: 100%;
+  font-family: "Matemasie", sans-serif;
+}
+
+
+header {
+  background: #97aeeb;
+}
+
+
+.logoa {
+  float: inherit;
+  margin-top: 5px;
+  margin-left: 1%;
+  margin-right: 20%;
+  box-sizing: border-box;
+}
+
+.contitulo {
+  font-size: 30px;
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 88vh;
+}
+
+
+.txtArea {
+  font-size: 30px;
+  color: black;
+  position: absolute;
+  width: 35%;
+  height: 70%;
+  left: 8%;
+  top: 2%;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f3f3f5;
+  box-sizing: border-box;
+  border: 2px solid #2a0e6b;
+  font-family: "Matemasie", sans-serif;
+}
+
+
+.txtArea::placeholder {
+  color: rgb(31, 63, 209);
+}
+
+
+.txtArea:focus,
+.txtArea:active {
+  border: none;
+  outline: none;
+}
+
+
+.leyenda {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 24%;
+  height: 8%;
+  left: 16%;
+  top: 72%;
+}
+
+
+.leyenda p {
+  color: rgb(0, 0, 0);
+  font-style: normal;
+  font-size: 24px;
+  line-height: 140%; 
+}
+
+
+.butons {
+  display: flex;
+  flex-direction: row;
+  padding: 1% 0;
+  position: absolute;
+  width: 40%;
+  left: 10%;
+  top: 80%;
+}
+
+
+.encriptar-btn {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 19px;
+  color: white;
+  background-color: #7b71db;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 2%;
+  gap: 8px;
+  width: 35%;
+  margin-right: 49px;
+  transition: 0.1s all;
+  font-family: "Matemasie", sans-serif;
+}
+
+
+.desencriptar-btn {
+  font-size: 20px;
+  color: #fff;
+  padding: 2%;
+  gap: 8px;
+  width: 35%;
+  background: #03001c;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.1s all;
+  font-family: "Matemasie", sans-serif;
+}
+
+
+.encriptar-btn:hover,
+.desencriptar-btn:hover {
+  background-color: #236ea0;
+  color: white;
+  border: 2px solid white;
+  transform: scale(0.9);
+}
+
+
+.encriptadoCtn {
+  background: #ffffff;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 35%;
+  height: 70%;
+  left: 53%;
+  top: 2%;
+  box-shadow: 0px 25px 30px -6px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  border: 2px solid #3517dd;
+}
+
+
+.mensaje-encriptado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  box-sizing: border-box;
+  gap: 15%;
+  position: absolute;
+  width: 100%;
+  top: 64%;
+}
+
+
+.mensaje-encriptado h2 {
+  font-size: 25px;
+  width: 60%;
+  text-align: center;
+  color: black;
+}
+
+
+.mensaje-encriptado p {
+  font-style: normal;
+  font-size: 15px;
+  width: 80%;
+  font-weight: 400;
+  text-align: center;
+  color: black;
+  line-height: 150%;
+}
+
+
+.encriptadoCtn img {
+  position: absolute;
+  width: 60%;
+  height: 70%;
+  top: 3%;
+}
+
+
+#areams {
+  display: none;
+}
+
+
+.areaMensaje textarea {
+  background: #ffffff;
+  display: flex;
+  position: absolute;
+  color: black;
+  font-size: 30px;
+  width: 36%;
+  height: 72%;
+  left: 53%;
+  top: 2%;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-family: "Matemasie", sans-serif;
+  
+}
+
+
+.copiarTx {
+  font-size: 18px;
+  background: #93c7f1;
+  display: flex;
+  position: absolute;
+  text-align: center;
+  border-radius: 10px;
+  width: 14%;
+  height: 10%;
+  left: 65%;
+  top: 82%;
+  text-align: center;
+  transition: 0.5s all;
+  font-family: "Matemasie", sans-serif;
+}
+
+
+.copiarTx:hover {
+  background-color: rgb(16, 30, 110);
+  opacity: 0.5;
+  color: #fff;
+}
+
+
+.info-msj {
+  font-size: 30px;
+  color: #495077;
+  resize: none;
+  border: none;
+  outline: none;
+}
+
+
+.footer-d p {
+  
+  position: absolute;
+  top: 95%;
+  font-size: 21px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+/* css Responsive  */
+@media (max-width: 1200px) {
+  
+  .contitulo {
+    font-size: 30px;
+    margin-left: 10%;
+  }
+  
+  
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .encriptarTexto {
+    width: 100%;
+  }
+  .txtArea {
+    width: 80%;
+    height: 35%;
+    left: 5%;
+    top: 2%;
+  }
+
+  .txtArea::placeholder {
+    font-size: 18px;
+  }
+
+  .leyenda {
+    width: 80%;
+    left: 10%;
+    top: 38%;
+  }
+  .leyenda p {
+    font-size: 20px;
+  }
+  .butons {
+    width: 70%;
+    left: 12%;
+    top: 45%;
+  }
+  .encriptar-btn,
+  .desencriptar-btn {
+    width: 90%;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  .encriptadoCtn {
+    width: 80%;
+    height: 35%;
+    left: 8%;
+    top: 55%;
+  }
+  
+  
+  .mensaje-encriptado h2 {
+    font-size: 15px;
+    width: 70%;
+  }
+
+  .encriptadoCtn img {
+    width: 38%;
+    height: 60%;
+  }
+  .areaMensaje textarea {
+    width: 78%;
+    height: 35%;
+    left: 10%;
+    top: 55.5%;
+    border: none;
+  }
+  .areaMensaje button {
+    position: absolute;
+    width: 30%;
+    height: 6%;
+    left: 8%;
+    top: 85%;
+    font-size: 14px;
+  }
+  
+
+  .footer-d p {
+  
+    position: absolute;
+    left: 5%;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+}
