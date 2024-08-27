@@ -2,7 +2,7 @@
 
 Descripción
 Este proyecto es una aplicación web que permite encriptar y desencriptar texto utilizando algoritmos simples. Fue desarrollado utilizando HTML, CSS, y JavaScript.
-![Vista del proyecto](img/captura encriptado.png)
+![Vista del proyecto](img/capturaencriptado.png)
 
 ## Características
 - **Encriptar Texto:** Convierte el texto ingresado en un formato encriptado.
