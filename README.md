@@ -2,6 +2,7 @@
 
 Descripción
 Este proyecto es una aplicación web que permite encriptar y desencriptar texto utilizando algoritmos simples. Fue desarrollado utilizando HTML, CSS, y JavaScript.
+![Vista del proyecto](img/capturaencriptado.png)
 
 ## Características
 - **Encriptar Texto:** Convierte el texto ingresado en un formato encriptado.
@@ -17,5 +18,22 @@ Este proyecto es una aplicación web que permite encriptar y desencriptar texto 
 1. Clona este repositorio en tu máquina local.
    ```bash
    git clone https://github.com/johannaviracacha/Encriptado.git
+
+   Uso
+Abre la aplicación en tu navegador.
+Ingresa el texto que deseas encriptar en el campo correspondiente.
+Presiona el botón de "Encriptar" para ver el texto encriptado.
+Usa el botón de "Desencriptar" para convertir el texto de nuevo a su forma original.
+
+Ejemplos
+Ejemplo de Encriptación
+Texto Original: alura latam
+Texto Encriptado: ailufatrai laitaim
+
+Ejemplo de Desencriptación
+Texto Encriptado: ailufatrai laitaim
+Texto Desencriptado: alura latam
+
+
 
 Desarrollado por Johanna 
