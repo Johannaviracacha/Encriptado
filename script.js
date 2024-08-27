@@ -57,7 +57,7 @@ function encriptarTexto() {
   // Función para copiar contenido.
   function copiarTexto() {
     var contenidoTxt = encriptadoTxt.value;
-    alert: "Mensaje copiado "
+    alert ("Mensaje copiado")
     navigator.clipboard.writeText(contenidoTxt);
   
   //Mostrar notificación de boton copiar.
